@@ -1,0 +1,7 @@
+[2026-10-10T22:49:48Z] === AST ITERATION 1 START | repo=tox-dev/tox-towncrier sha=ed81edcc ===
+[2026-10-10T22:49:48Z] [iter=1] PHASE START: ast repo=tox-dev/tox-towncrier sha=ed81edcc
+[2026-10-10T22:49:48Z] [iter=1] Building AST aggregate chunks
+[2026-10-10T22:49:49Z] [iter=1] AST chunks built count=1 triples=9412
+[2026-10-10T22:49:49Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/ed81edcc7796277f49fa0fb8f2b537c641f03c16/.complete
+[2026-10-10T22:49:49Z] [iter=1] PHASE END: ast elapsed_s=1 elapsed_min=0.0
+[2026-10-10T22:49:49Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
