@@ -1,1 +1,122 @@
-Initializing
+# Repolex Knowledge Graph of tox-dev/tox-towncrier
+
+RDF knowledge graph data for [tox-dev/tox-towncrier](https://github.com/tox-dev/tox-towncrier), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download tox-dev/tox-towncrier
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── ed81edcc7796277f49fa0fb8f2b537c641f03c16
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── ed81edcc7796277f49fa0fb8f2b537c641f03c16
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 007d1ac120ccbf1596c4992dd1de4a3524b7844b.nq.gz
+│   ├── 117dafd2837846c41cd67e2e521ede9ca459f1d1.nq.gz
+│   ├── 1a34adf8763d92a63584d989bcbc6ddc7b5ecbd5.nq.gz
+│   ├── 2f40932f231fe133fc8975d16b2f3865af1a00f3.nq.gz
+│   ├── 36e8bd0f7399a56231449999cd23904aefee766d.nq.gz
+│   ├── 37a6e2ee047b28a82586cc887feb27574be3ef4a.nq.gz
+│   ├── 3bc5466a76741a74ac756060377adf1cd4095e19.nq.gz
+│   ├── 3dde2eaa4cfe6dee0045748b18c8db8a4fb2fca6.nq.gz
+│   ├── 4072d6b2ba953f3834f0d45ef78a7d382d9a1f5e.nq.gz
+│   ├── 446254be7715b6cb1124c15e7fcee90db865e63e.nq.gz
+│   ├── 4479652ed8465e4e2b2c0b60c474953f060bad1b.nq.gz
+│   ├── 4cf6a2ec6f0f4f86893c81bec89e8462b93bf46c.nq.gz
+│   ├── 56695a89c616723333d3c40c0a5d015f80543066.nq.gz
+│   ├── 5f3a6636b114929a964a027fbfe1e9b9faeb817c.nq.gz
+│   ├── 618bc0b51ce8324ce3d3a249906beab5f24ee70e.nq.gz
+│   ├── 6190ff5937decc6305f75b295262d8131ed17288.nq.gz
+│   ├── 6283f3d4e46382ae98e8c5b6ac28c47a197b51fe.nq.gz
+│   ├── 6484ac9773a9ddb01d22737f244a5de3c216b922.nq.gz
+│   ├── 6acb3b415aa0ee5568c3c30ff1e447d21c53b6a5.nq.gz
+│   ├── 6e2701d8e0cf2d1c6a404dfdfed9630ffc1ce6a3.nq.gz
+│   ├── 6f442396ee0b58ea70db845619a75e13f315c198.nq.gz
+│   ├── 74f60b1215e5ecfc18b3e4ee6612c83e7e45240b.nq.gz
+│   ├── 7998d1e7884309bf15e6754c4ad1e380ca0460a0.nq.gz
+│   ├── 7ecee60d9ca373d013ac7d05744a9fcd3b65379d.nq.gz
+│   ├── 8bea31cd78f30f9f51d24a0dc91b6ea7c50891f3.nq.gz
+│   ├── 8c3a778adfa56db04a81ba121bab38bd369e7e40.nq.gz
+│   ├── 927493c69aee52871f4fe80038f2f4e2f54ad0ab.nq.gz
+│   ├── 93dec44514d8a1a7733e31530cadb6a82400e865.nq.gz
+│   ├── 956dd207c232a953c2c67d7d1f74fdaef9d692f0.nq.gz
+│   ├── 95c1cb7aaa047efa96780caa1dffdb681355be0b.nq.gz
+│   ├── 9d8403cf2b5b21c7892156b5352fc3700cfa1380.nq.gz
+│   ├── b9550c7be27498db3d42122989eb801e2fe41bc5.nq.gz
+│   ├── bec710ca8f6de7db3f9c85eba9550713ed812e15.nq.gz
+│   ├── c0299be6c8051fe7f0ef76cc3f907cd7806bef6c.nq.gz
+│   ├── c427ee226404e3bb848a3e995e997c2768f9ef62.nq.gz
+│   ├── c51020b774e1fa52853474a89216baab8972b0d0.nq.gz
+│   ├── c5e4a499c1d5ad89bf01ba8ff2d0fda3e374fb87.nq.gz
+│   ├── cc544a6e7e607b94c1233de6ff72f8af6a354380.nq.gz
+│   ├── d06d65b0e26f019c5183a60a439666337a68e98d.nq.gz
+│   ├── d36832df25913e9b986db37b6c6a2ea4f9f4fdef.nq.gz
+│   ├── d65d1be3cc2c2a9a2c433fca306694c796151e13.nq.gz
+│   ├── dd53a6445fffd49cac90dba7836fc4a5cf3eb56e.nq.gz
+│   ├── e0d6e0d485f7d2dc93c9acd4b0a83b3e1576e928.nq.gz
+│   ├── ec8c33334fee0c7b5da22af531a3394e02f63023.nq.gz
+│   └── ffb51cf04ef1175da30cd0c21b2cb60fbf8b0f95.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── ed81edcc7796277f49fa0fb8f2b537c641f03c16.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+12 directories, 52 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[tox-dev/tox-towncrier](https://github.com/tox-dev/tox-towncrier)
+
+---
+*Parsed on 2026-10-10 by [repolex](https://repolex.ai)*

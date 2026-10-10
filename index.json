@@ -1,0 +1,11 @@
+{
+  "org": "tox-dev",
+  "repo": "tox-towncrier",
+  "versions": [
+    {
+      "commit": "ed81edcc7796277f49fa0fb8f2b537c641f03c16",
+      "tag": "",
+      "parsed_at": "2026-10-10T22:51:04.171937+00:00"
+    }
+  ]
+}
